@@ -1,8 +1,12 @@
 'use strict';
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const num = 31;
 let flag = false;
 
-arr.map(el => el === 5 ? flag = true : flag);
+for (let i = 2; i < num; i++) {
+    if (!(num % i)) {
+        flag = true;
+    }
+}
 
-alert(flag ? 'да' : 'нет');
+alert(flag);
