@@ -1,16 +1,8 @@
 'use strict';
 
-const array = ['a', 'b', 'c', 'd', 'e'];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let flag = false;
 
-/**
- *
- * @param {array} arr
- * @returns {boolean}
- */
-function hasElem(arr) {
-    let flag = false;
-    arr.map(el => el === 'c' ? flag = true : flag);
-    return flag;
-}
+arr.map(el => el === 5 ? flag = true : flag);
 
-hasElem(array);
+alert(flag ? 'да' : 'нет');
