@@ -1,12 +1,8 @@
 'use strict';
 
-const num = 31;
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let flag = false;
 
-for (let i = 2; i < num; i++) {
-    if (!(num % i)) {
-        flag = true;
-    }
-}
+array.map((el, i, arr) => el === arr[i - 1] ? flag = true : flag);
 
-alert(flag);
+alert(flag ? 'да' : 'нет');
